@@ -30,7 +30,7 @@ const app = createApp({
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
     if (token === '') {
       alert('您尚未登入請重新登入。');
-      window.location = 'login.html';
+      window.location = 'index.html';
     }
     //將 token 放進 header(每次發出請求設定預設值) 
     axios.defaults.headers.common.Authorization = token;
